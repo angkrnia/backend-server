@@ -1,0 +1,29 @@
+[
+  {
+    "UserId": 1,
+    "name": "Tiger",
+    "image": "https://files.worldwildlife.org/wwfcmsprod/images/Sumatran_Tiger_New_Hero_Image/hero_small/47na1tq1ai_Sumatran_Tiger_Hero.jpg",
+    "description1": "Panthera tigris",
+    "description2": "Mammalia",
+    "description3": "Endangered",
+    "description4": "The tiger (Panthera tigris) is the largest living cat species and a member of the genus Panthera. It is most recognisable for its dark vertical stripes on orange fur with a white underside. An apex predator, it primarily preys on ungulates, such as deer and wild boar. It is territorial and generally a solitary but social predator, requiring large contiguous areas of habitat to support its requirements for prey and rearing of its offspring. Tiger cubs stay with their mother for about two years and then become independent, leaving their mother's home range to establish their own."
+  },
+  {
+    "UserId": 1,
+    "name": "Giraffe",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Giraffe_Mikumi_National_Park.jpg/800px-Giraffe_Mikumi_National_Park.jpg",
+    "description1": "Giraffa camelopardalis",
+    "description2": "Mammalia",
+    "description3": "Vulnerable",
+    "description4": "The giraffe is a large African hoofed mammal belonging to the genus Giraffa. It is the tallest living terrestrial animal and the largest ruminant on Earth. Traditionally, giraffes were thought to be one species, Giraffa camelopardalis, with nine subspecies. Most recently, researchers proposed dividing them into up to eight extant species due to new research into their mitochondrial and nuclear DNA, as well as morphological measurements. Seven other extinct species of Giraffa are known from the fossil record."
+  },
+  {
+    "UserId": 1,
+    "name": "Golden Eagle",
+    "image": "https://www.birdlife.org/wp-content/uploads/2021/06/Eagle-in-flight-Richard-Lee-Unsplash-1-edited-scaled.jpg",
+    "description1": "Aquila chrysaetos",
+    "description2": "Aves",
+    "description3": "Least Concern",
+    "description4": "The golden eagle (Aquila chrysaetos) is a bird of prey living in the Northern Hemisphere. It is the most widely distributed species of eagle. Like all eagles, it belongs to the family Accipitridae. They are one of the best-known birds of prey in the Northern Hemisphere. These birds are dark brown, with lighter golden-brown plumage on their napes. Immature eagles of this species typically have white on the tail and often have white markings on the wings. Golden eagles use their agility and speed combined with powerful feet and large, sharp talons to hunt a variety of prey, mainly hares, rabbits, and marmots and other ground squirrels.[4] Golden eagles maintain home ranges or territories that may be as large as 200 km2 (77 sq mi). They build large nests in cliffs and other high places to which they may return for several breeding years. Most breeding activities take place in the spring; they are monogamous and may remain together for several years or possibly for life. Females lay up to four eggs, and then incubate them for six weeks. Typically, one or two young survive to fledge in about three months. These juvenile golden eagles usually attain full independence in the fall, after which they wander widely until establishing a territory for themselves in four to five years."
+  }
+]

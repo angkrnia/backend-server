@@ -1,0 +1,28 @@
+{
+    "name": "kebe",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node app.js",
+        "dev": "nodemon app.js",
+        "migrate": "sequelize db:migrate",
+        "seed": "sequelize db:seed:all",
+        "db:create": "sequelize db:create",
+        "migration:create": "sequelize migration:create --name",
+        "model:create": "npx sequelize-cli model:generate --name",
+        "seed:create": "sequelize seed:generate --name"
+    },
+    "author": "far",
+    "license": "ISC",
+    "dependencies": {
+        "bcryptjs": "^2.4.3",
+        "cors": "^2.8.5",
+        "express": "^4.18.1",
+        "jsonwebtoken": "^8.5.1",
+        "nodemon": "^2.0.21",
+        "pg": "^8.10.0",
+        "sequelize": "^6.23.0"
+    }
+}

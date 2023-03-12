@@ -1,0 +1,62 @@
+[
+    {
+        "title": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "year": "2023",
+        "isbn": "978-3-16-148410-0",
+        "page": "180",
+        "cover": "https://example.com/the-great-gatsby-cover.jpg",
+        "description": "A novel about the decadence of the Jazz Age.",
+        "category": "Fiction",
+        "rating": 4.7,
+        "is_borrowed": false
+    },
+    {
+        "title": "To Kill a Mockingbird",
+        "author": "Harper Lee",
+        "year": "2018",
+        "isbn": "978-3-16-148410-1",
+        "page": "281",
+        "cover": "https://example.com/to-kill-a-mockingbird-cover.jpg",
+        "description": "A novel about racial inequality and injustice in the American South.",
+        "category": "Fiction",
+        "rating": 4.8,
+        "is_borrowed": false
+    },
+    {
+        "title": "The Catcher in the Rye",
+        "author": "J.D. Salinger",
+        "year": "2020",
+        "isbn": "978-3-16-148410-2",
+        "page": "224",
+        "cover": "https://example.com/the-catcher-in-the-rye-cover.jpg",
+        "description": "A novel about teenage angst and alienation.",
+        "category": "Fiction",
+        "rating": 4.5,
+        "is_borrowed": true
+    },
+    {
+        "title": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "year": "1925",
+        "isbn": "9780141182636",
+        "page": "218",
+        "cover": "https://images-na.ssl-images-amazon.com/images/I/71i3u3T6ezL.jpg",
+        "description": "A novel about the decadence and excess of the Roaring Twenties.",
+        "category": "Fiction",
+        "rating": 4.7,
+        "is_borrowed": false
+    },
+    {
+        "title": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "year": "1925",
+        "isbn": "9780141182636",
+        "page": "218",
+        "cover": "https://images-na.ssl-images-amazon.com/images/I/71i3u3T6ezL.jpg",
+        "description": "A novel about the decadence and excess of the Roaring Twenties.",
+        "category": "Fiction",
+        "rating": 4.7,
+        "is_borrowed": false
+    }
+]
