@@ -1,7 +1,23 @@
 [
   {
-    "username": "admin",
-    "password": "admin"
+    "username": "angga",
+    "password": "angga"
+  },
+  {
+    "username": "maman",
+    "password": "maman"
+  },
+  {
+    "username": "auzan",
+    "password": "auzan"
+  },
+  {
+    "username": "rafi",
+    "password": "rafi"
+  },
+  {
+    "username": "baharudin",
+    "password": "baharudin"
   }
 ]
 

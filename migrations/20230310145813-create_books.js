@@ -24,14 +24,34 @@ module.exports = {
                 allowNull: false,
                 type: Sequelize.STRING,
             },
+            publisher: {
+                type: Sequelize.STRING,
+                allowNull: false,
+            },
             year: {
                 type: Sequelize.INTEGER,
             },
             isbn: {
                 type: Sequelize.STRING,
             },
+            language: {
+                type: Sequelize.STRING,
+                allowNull: false,
+            },
             page: {
-                type: Sequelize.INTEGER,
+                type: Sequelize.STRING,
+            },
+            length: {
+                type: Sequelize.STRING,
+                allowNull: false,
+            },
+            weight: {
+                type: Sequelize.STRING,
+                allowNull: false,
+            },
+            width: {
+                type: Sequelize.STRING,
+                allowNull: false,
             },
             cover: {
                 type: Sequelize.STRING,

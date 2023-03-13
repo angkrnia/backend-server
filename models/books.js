@@ -35,6 +35,14 @@ module.exports = (sequelize, DataTypes) => {
                     notEmpty: { msg: 'Author must be filled' },
                 },
             },
+            publisher: {
+                type: DataTypes.STRING,
+                allowNull: false,
+                validate: {
+                    notNull: { msg: 'Publisher must be filled' },
+                    notEmpty: { msg: 'Publisher must be filled' },
+                },
+            },
             year: {
                 type: DataTypes.INTEGER,
                 allowNull: false,
@@ -57,15 +65,44 @@ module.exports = (sequelize, DataTypes) => {
                     notEmpty: { msg: 'ISBN must be filled' },
                 },
             },
-            page: {
-                type: DataTypes.INTEGER,
+            language: {
+                type: DataTypes.STRING,
                 allowNull: false,
                 validate: {
-                    validatePage(value) {
-                        if (typeof this.page !== 'number') {
-                            throw new Error('Page must be integer');
-                        }
-                    },
+                    notNull: { msg: 'Language must be filled' },
+                    notEmpty: { msg: 'Language must be filled' },
+                },
+            },
+            page: {
+                type: DataTypes.STRING,
+                allowNull: false,
+                validate: {
+                    notNull: { msg: 'Page must be filled' },
+                    notEmpty: { msg: 'Page must be filled' },
+                },
+            },
+            length: {
+                type: DataTypes.STRING,
+                allowNull: false,
+                validate: {
+                    notNull: { msg: 'Length must be filled' },
+                    notEmpty: { msg: 'Length must be filled' },
+                },
+            },
+            weight: {
+                type: DataTypes.STRING,
+                allowNull: false,
+                validate: {
+                    notNull: { msg: 'Weight must be filled' },
+                    notEmpty: { msg: 'Weight must be filled' },
+                },
+            },
+            width: {
+                type: DataTypes.STRING,
+                allowNull: false,
+                validate: {
+                    notNull: { msg: 'Width must be filled' },
+                    notEmpty: { msg: 'Width must be filled' },
                 },
             },
             cover: {
