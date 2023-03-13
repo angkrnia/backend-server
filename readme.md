@@ -1,4 +1,4 @@
-# ROUTE BOOK \
+# ROUTE BOOK
 GET | `/books` \
 untuk mengambil data semua buku \
 GET | `/books/{id}` \
