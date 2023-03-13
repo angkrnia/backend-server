@@ -4,6 +4,7 @@ const { Content, User } = require('../models');
 async function authentication(req, res, next) {
     try {
         const { access_token } = req.headers;
+        console.log(req.headers);
         if (!access_token) {
             throw { name: `Unauthorized Access` };
         } else {
@@ -30,7 +31,7 @@ async function authentication(req, res, next) {
 
 async function authorization(req, res, next) {
     try {
-        if (req.user.username == 'admin') {
+        if (req.user.username == 'angga' || req.user.username == 'maman' || req.user.username == 'auzan' || req.user.username == 'rafi' || req.user.username == 'baahrudin') {
             next();
         } else {
             const result = await Content.findByPk(req.params.id);
