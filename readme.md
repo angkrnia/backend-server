@@ -3,6 +3,8 @@
 - untuk mengambil data semua buku
 > GET | `/books/{id}`
 - untuk mengambil detail buku
+- > POST | `/login`
+- login dulu buat dapetin access_token
 > POST | `books/create`
 - untuk menambah buku baru
 Harus mengirimkan properti berikut: \
