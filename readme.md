@@ -19,11 +19,10 @@ width: \
 cover: (URL IMAGE) \
 description: \
 category: \
-rating: \
+rating:
 > PUT | `books/:id/edit`
 - untuk mengedit buku (WAJIB MENGIRIMKAN ID)
-- untuk menambah buku baru
-Harus mengirimkan properti berikut untuk edit: \
+Bisa mengirimkan salah satu properti dibawah ini: \
 title: \
 author: \
 publisher: \
@@ -37,6 +36,6 @@ width: \
 cover: (URL IMAGE) \
 description: \
 category: \
-rating: \
+rating:
 > DELETE | `books/:id`
 - untuk menghapus buku (WAJIB MENGIRIMKAN ID)
