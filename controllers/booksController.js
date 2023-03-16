@@ -1,4 +1,5 @@
 const { Books } = require('../models');
+const { nanoid } = require('nanoid');
 
 class BooksController {
     static async getBooks(req, res, next) {
@@ -24,14 +25,6 @@ class BooksController {
     static async getBooksDetail(req, res, next) {
         try {
             let id = req.params.id;
-            id = Number(id);
-            if (isNaN(id)) {
-                res.status(404).send({
-                    status: 'not found',
-                    message: `Book with id ${id} not found.`,
-                });
-                return;
-            }
             const book = await Books.findOne({
                 where: {
                     id,
@@ -61,71 +54,84 @@ class BooksController {
             const {
                 title,
                 author,
+                publisher,
                 year,
                 isbn,
+                language,
                 page,
+                length,
+                weight,
+                width,
                 cover,
                 description,
                 category,
                 rating,
-                is_borrowed,
             } = req.body;
             await Books.create({
+                id: `book-${nanoid(6)}`,
                 title,
                 author,
+                publisher,
                 year,
                 isbn,
+                language,
                 page,
+                length,
+                weight,
+                width,
                 cover,
                 description,
                 category,
                 rating,
-                is_borrowed,
             });
             res.status(201).json({
                 message: 'Success Create',
             });
         } catch (error) {
+            console.log(error);
             next(error);
         }
     }
 
     static async putBook(req, res, next) {
         let id = req.params.id;
-        id = Number(id);
-        if (isNaN(id)) {
-            return res.status(404).send({
-                status: 'not found',
-                message: `Book with id ${id} not found.`,
-            })
-        }
         try {
             const book = await Books.findByPk(id);
             if (book) {
                 const {
                     title,
                     author,
+                    publisher,
                     year,
                     isbn,
+                    language,
                     page,
+                    length,
+                    weight,
+                    width,
                     cover,
                     description,
                     category,
                     rating,
-                    is_borrowed,
+                    is_borrowed
                 } = req.body;
                 await Books.update(
                     {
                         title,
                         author,
+                        publisher,
                         year,
                         isbn,
+                        language,
                         page,
+                        length,
+                        weight,
+                        width,
                         cover,
                         description,
                         category,
                         rating,
-                        is_borrowed,
+                        is_borrowed
                     },
                     {
                         where: {
@@ -147,15 +153,8 @@ class BooksController {
         }
     }
 
-    static async deleteBook(req, res, next){
+    static async deleteBook(req, res, next) {
         let id = req.params.id;
-        id = Number(id);
-        if (isNaN(id)) {
-            return res.status(404).send({
-                status: 'not found',
-                message: `Book with id ${id} not found.`,
-            })
-        }
         try {
             const book = await Books.findByPk(id);
             if (book) {

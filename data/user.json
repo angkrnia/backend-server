@@ -1,23 +1,39 @@
 [
   {
     "username": "angga",
-    "password": "angga"
+    "fullname": "Angga",
+    "password": "angga",
+    "role": "admin"
   },
   {
     "username": "maman",
-    "password": "maman"
+    "fullname": "Maman",
+    "password": "maman",
+    "role": "admin"
   },
   {
     "username": "auzan",
-    "password": "auzan"
+    "fullname": "Auzan",
+    "password": "auzan",
+    "role": "admin"
   },
   {
     "username": "rafi",
-    "password": "rafi"
+    "fullname": "Rafi",
+    "password": "rafi",
+    "role": "admin"
   },
   {
     "username": "baharudin",
-    "password": "baharudin"
+    "fullname": "Baharudin",
+    "password": "baharudin",
+    "role": "admin"
+  },
+  {
+    "username": "irfan",
+    "fullname": "Irfan",
+    "password": "irfan",
+    "role": "admin"
   }
 ]
 

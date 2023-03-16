@@ -12,12 +12,14 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
-      User.hasMany(models.Content)
+      User.hasMany(models.Pinjaman);
     }
   };
   User.init({
     username: DataTypes.STRING,
-    password: DataTypes.STRING
+    fullname: DataTypes.STRING,
+    password: DataTypes.STRING,
+    role: DataTypes.STRING
   }, {
     hooks: {
       beforeCreate: (instance, option) => {

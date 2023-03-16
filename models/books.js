@@ -2,22 +2,17 @@
 const { Model } = require('sequelize');
 module.exports = (sequelize, DataTypes) => {
     class Books extends Model {
-        // static associate(models) {
-        //     // define association here
-        //     Books.belongsTo(models.Category);
-        // }
+        static associate(models) {
+            // define association here
+            Books.hasMany(models.Pinjaman);
+        }
     }
     Books.init(
         {
             id: {
-                type: DataTypes.INTEGER,
+                type: DataTypes.STRING,
                 primaryKey: true,
-                autoIncrement: true,
                 allowNull: false,
-                validate: {
-                    notNull: { msg: 'Id must be filled' },
-                    notEmpty: { msg: 'Id must be filled' },
-                },
             },
             title: {
                 type: DataTypes.STRING,

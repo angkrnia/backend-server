@@ -11,8 +11,15 @@ module.exports = {
       username: {
         type: Sequelize.STRING,
       },
+      fullname: {
+        type: Sequelize.STRING
+      },
       password: {
         type: Sequelize.STRING
+      },
+      role: {
+        type: Sequelize.STRING,
+        defaultValue: 'user'
       },
       createdAt: {
         allowNull: false,

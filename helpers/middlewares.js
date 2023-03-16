@@ -1,5 +1,5 @@
 const { verifyToken } = require('./jwt');
-const { Content, User } = require('../models');
+const { Books, User } = require('../models');
 
 async function authentication(req, res, next) {
     try {
@@ -33,8 +33,12 @@ async function authorization(req, res, next) {
         if (req.user.username == 'angga' || req.user.username == 'maman' || req.user.username == 'auzan' || req.user.username == 'rafi' || req.user.username == 'baharudin' || req.user.username == 'irfan') {
             next();
         } else {
-            const result = await Content.findByPk(req.params.id);
-            if (result.UserId == req.user.id) {
+            const result = await User.findOne({
+                where: {
+                    username: req.user.username,
+                    },
+                });
+            if (result.role === "admin") {
                 next();
             } else {
                 throw { name: `Forbidden Access` };

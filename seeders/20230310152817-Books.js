@@ -1,5 +1,6 @@
 'use strict';
 const fs = require('fs');
+const { nanoid } = require('nanoid');
 
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
@@ -15,6 +16,7 @@ module.exports = {
          */
         let data = JSON.parse(fs.readFileSync('./data/books.json', 'utf-8'));
         data.forEach((el) => {
+            el.id = `book-${nanoid(6)}`;
             el.createdAt = new Date();
             el.updatedAt = new Date();
         })
