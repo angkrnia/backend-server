@@ -3,12 +3,11 @@ const { Content, User } = require('../models');
 
 async function authentication(req, res, next) {
     try {
-        const { access_token } = req.headers;
-        console.log(req.headers);
-        if (!access_token) {
+        const { token } = req.headers;
+        if (!token) {
             throw { name: `Unauthorized Access` };
         } else {
-            const { username } = verifyToken(access_token);
+            const { username } = verifyToken(token);
             const foundUser = await User.findOne({
                 where: {
                     username,
@@ -31,7 +30,7 @@ async function authentication(req, res, next) {
 
 async function authorization(req, res, next) {
     try {
-        if (req.user.username == 'angga' || req.user.username == 'maman' || req.user.username == 'auzan' || req.user.username == 'rafi' || req.user.username == 'baahrudin') {
+        if (req.user.username == 'angga' || req.user.username == 'maman' || req.user.username == 'auzan' || req.user.username == 'rafi' || req.user.username == 'baharudin' || req.user.username == 'irfan') {
             next();
         } else {
             const result = await Content.findByPk(req.params.id);
