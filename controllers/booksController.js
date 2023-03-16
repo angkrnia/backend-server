@@ -4,7 +4,7 @@ class BooksController {
     static async getBooks(req, res, next) {
         try {
             const books = await Books.findAll();
-            if (books) {
+            if (books?.length > 0) {
                 res.status(200).send({
                     status: 'success',
                     data: {
@@ -13,7 +13,7 @@ class BooksController {
                 });
             } else {
                 throw {
-                    name: 'Books Not Found',
+                    message: 'Belum ada buku',
                 };
             }
         } catch (error) {
