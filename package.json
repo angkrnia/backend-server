@@ -7,12 +7,12 @@
         "test": "echo \"Error: no test specified\" && exit 1",
         "start": "node app.js",
         "dev": "nodemon app.js",
-        "migrate": "sequelize db:migrate",
-        "seed": "sequelize db:seed:all",
-        "db:create": "sequelize db:create",
-        "migration:create": "sequelize migration:create --name",
+        "migrate": "npx sequelize db:migrate",
+        "seed": "npx sequelize db:seed:all",
+        "db:create": "npx sequelize db:create",
+        "migration:create": "npx sequelize migration:create --name",
         "model:create": "npx sequelize-cli model:generate --name",
-        "seed:create": "sequelize seed:generate --name"
+        "seed:create": "npx sequelize seed:generate --name"
     },
     "author": "far",
     "license": "ISC",
