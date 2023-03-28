@@ -1,9 +1,9 @@
 {
   "development": {
-    "username": "postgres",
-    "password": "angga",
-    "database": "db_kawahedukasi",
-    "host": "127.0.0.1",
+    "username": "vjqbqtfo",
+    "password": "peMlYGRyZN5blWgVEQuwAxEZsdTqrDHo",
+    "database": "vjqbqtfo",
+    "host": "rosie.db.elephantsql.com",
     "dialect": "postgres"
   },
   "production": {
