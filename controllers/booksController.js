@@ -17,6 +17,7 @@ class BooksController {
                 };
             }
         } catch (error) {
+            console.log(error);
             next(error);
         }
     }
