@@ -7,9 +7,9 @@
         "test": "echo \"Error: no test specified\" && exit 1",
         "start": "node app.js",
         "dev": "nodemon app.js",
-        "migrate": "npx sequelize db:migrate",
-        "seed": "npx sequelize db:seed:all",
         "db:create": "npx sequelize db:create",
+        "db:migrate": "npx sequelize db:migrate",
+        "db:seed": "npx sequelize db:seed:all",
         "migration:create": "npx sequelize migration:create --name",
         "model:create": "npx sequelize-cli model:generate --name",
         "seed:create": "npx sequelize seed:generate --name"
@@ -23,6 +23,7 @@
         "jsonwebtoken": "^8.5.1",
         "nodemon": "^2.0.21",
         "pg": "^8.10.0",
-        "sequelize": "^6.23.0"
+        "sequelize": "^6.23.0",
+        "sequelize-cli": "^6.6.0"
     }
 }
