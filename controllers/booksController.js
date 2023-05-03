@@ -61,27 +61,35 @@ class BooksController {
         try {
             const {
                 title,
+                publisher,
                 author,
                 year,
                 isbn,
                 page,
+                language,
+                length,
+                width,
+                weight,
                 cover,
                 description,
                 category,
                 rating,
-                is_borrowed,
             } = req.body;
             await Books.create({
                 title,
+                publisher,
                 author,
                 year,
                 isbn,
                 page,
+                language,
+                length,
+                width,
+                weight,
                 cover,
                 description,
                 category,
                 rating,
-                is_borrowed,
             });
             res.status(201).json({
                 message: 'Success Create',
