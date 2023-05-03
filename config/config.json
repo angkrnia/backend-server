@@ -1,9 +1,9 @@
 {
   "development": {
-    "username": "fkcoxrtz",
-    "password": "oNFU3SY0b7FH8HRCyloi4sEOVj0l-2TI",
-    "database": "fkcoxrtz",
-    "host": "rosie.db.elephantsql.com",
+    "username": "",
+    "password": "",
+    "database": "",
+    "host": "",
     "dialect": "postgres"
   },
   "production": {
